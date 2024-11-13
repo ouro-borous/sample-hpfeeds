@@ -22,7 +22,7 @@ def main():
 
     def on_message(ident, channel, payload):
         
-        print(ident, "sent a notif on", channel, ". Relaying!", file=sys.stderr)
+        print(ident, "sent", payload, " on channel", channel, ". Relaying to channel", RELAYCHAN, file=sys.stderr)
         hpc.publish(RELAYCHAN, payload)
         
         # try:

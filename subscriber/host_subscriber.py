@@ -3,7 +3,7 @@ import hpfeeds
 
 
 def on_message(identifier, channel, payload):
-    print(identifier, payload)
+    print("Received ", payload, " from", identifier, "on channel", channel)
 
 
 def on_error(payload):

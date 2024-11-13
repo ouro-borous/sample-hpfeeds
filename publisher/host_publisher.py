@@ -1,14 +1,16 @@
 import sys
 import hpfeeds
 
+PUBCHANNEL = "pub_client"
 
 def main():
     
 
     command = ""
     while command != 'quit':
-        command = input("Ready to publish. Awaiting command:")
-        client = hpfeeds.new('localhost', 20000, 'popo_client', 'password')
+        print("Ready to publish on channel", PUBCHANNEL, ". Awaiting payload:")
+        command = input()
+        client = hpfeeds.new('localhost', 20000, PUBCHANNEL, 'password')
         client.publish("a.client.sample", command)
         
         client.close()
