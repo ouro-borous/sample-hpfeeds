@@ -1,0 +1,12 @@
+aiohttp
+aiorun
+aionotify
+async-timeout
+attrs
+chardet
+idna
+idna-ssl
+multidict
+prometheus-client
+yarl
+wrapt

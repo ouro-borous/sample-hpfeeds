@@ -1,0 +1,23 @@
+{
+  "popo_client": 
+  {
+    "owner": "sector_a",
+    "secret": "password",
+    "subchans": [],
+    "pubchans": ["a.client.sample"]
+  },
+  "tab_a": 
+  {
+    "owner": "sector_a",
+    "secret": "password",
+    "subchans": ["a.client.sample", "b.channel"],
+    "pubchans": ["a.channel"]
+  },
+  "tab_b": 
+  {
+    "owner": "sector_b",
+    "secret": "password",
+    "subchans": ["a.channel"],
+    "pubchans": ["b.channel"]
+  }
+}
